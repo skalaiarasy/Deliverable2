@@ -28,7 +28,9 @@ namespace Deliverable2
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("\nI'm  sorry  but you have already said that.");
+                        Console.ResetColor();
 
                     }
                 }
@@ -50,7 +52,9 @@ namespace Deliverable2
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("\nI'm  sorry  but you have already said that.");
+                        Console.ResetColor();
                     }
                 }
                 else if (convertedString == "hello there")
@@ -63,13 +67,17 @@ namespace Deliverable2
                     }
                     else
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("\nI'm  sorry  but you have already said that.");
+                        Console.ResetColor(); 
                     }
                 }
 
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("\nSorry wrong input : not in the list.");
+                    Console.ResetColor();
                 }
 
                 Console.WriteLine("\nIf you want to say something else to the bot press 'yes' or 'y' otherwise press 'any key' to exit.  ");
